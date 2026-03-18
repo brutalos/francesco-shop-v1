@@ -61,4 +61,36 @@ h1, h2, h3, h4, h5, h6 {
   .btn-outline {
     @apply border border-primary text-primary px-8 py-3 rounded-none transition-all duration-300 hover:bg-primary hover:text-white uppercase tracking-widest font-bold text-sm;
   }
+
+  /* Google Places Autocomplete styling */
+  .wolt-address-input {
+    width: 100% !important;
+    border: 1px solid #f3f4f6 !important; /* gray-100 */
+    background-color: #f9fafb !important; /* gray-50 */
+    padding: 1rem 1rem 1rem 3rem !important;
+    font-family: inherit !important;
+    outline: none !important;
+    transition: all 0.3s !important;
+  }
+
+  .wolt-address-input:focus {
+    border-color: #dc3727 !important; /* accent */
+  }
+
+  .dark .wolt-address-input {
+    background-color: #18181b !important; /* zinc-900 */
+    border-color: #3f3f46 !important; /* zinc-700 */
+    color: #ffffff !important;
+  }
+
+  .dark .wolt-address-input::part(input) {
+    color: #ffffff !important;
+    background-color: transparent !important;
+  }
+
+  .dark .wolt-address-input::part(suggestions-container) {
+    background-color: #18181b !important;
+    border: 1px solid #3f3f46 !important;
+    color: #ffffff !important;
+  }
 }

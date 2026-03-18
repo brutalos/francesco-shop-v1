@@ -38,10 +38,10 @@ export default function ReservationForm() {
             name="persons" 
             value={formData.persons}
             onChange={handleChange}
-            className="w-full bg-gray-50 border border-gray-200 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+            className="w-full bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 px-4 py-3 focus:outline-none focus:border-accent transition-colors text-black dark:text-white"
           >
             {[1,2,3,4,5,6,7,8,9,10].map(n => (
-              <option key={n} value={n}>{n} Personen</option>
+              <option key={n} value={n} className="bg-white dark:bg-zinc-900">{n} Personen</option>
             ))}
           </select>
         </div>
@@ -55,7 +55,7 @@ export default function ReservationForm() {
             name="date" 
             value={formData.date}
             onChange={handleChange}
-            className="w-full bg-gray-50 border border-gray-200 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+            className="w-full bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 px-4 py-3 focus:outline-none focus:border-accent transition-colors text-black dark:text-white"
             required
           />
         </div>
@@ -68,10 +68,10 @@ export default function ReservationForm() {
             name="time" 
             value={formData.time}
             onChange={handleChange}
-            className="w-full bg-gray-50 border border-gray-200 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+            className="w-full bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 px-4 py-3 focus:outline-none focus:border-accent transition-colors text-black dark:text-white"
           >
             {times.map(t => (
-              <option key={t} value={t}>{t} Uhr</option>
+              <option key={t} value={t} className="bg-white dark:bg-zinc-900">{t} Uhr</option>
             ))}
           </select>
         </div>
@@ -85,7 +85,7 @@ export default function ReservationForm() {
             name="name" 
             value={formData.name}
             onChange={handleChange}
-            className="w-full bg-gray-50 border border-gray-200 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+            className="w-full bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 px-4 py-3 focus:outline-none focus:border-accent transition-colors text-black dark:text-white placeholder:text-gray-400 dark:placeholder:text-zinc-500"
             placeholder="Ihr Name"
             required
           />
@@ -100,7 +100,7 @@ export default function ReservationForm() {
             name="email" 
             value={formData.email}
             onChange={handleChange}
-            className="w-full bg-gray-50 border border-gray-200 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+            className="w-full bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 px-4 py-3 focus:outline-none focus:border-accent transition-colors text-black dark:text-white placeholder:text-gray-400 dark:placeholder:text-zinc-500"
             placeholder="ihre@email.com"
             required
           />
@@ -115,7 +115,7 @@ export default function ReservationForm() {
             name="phone" 
             value={formData.phone}
             onChange={handleChange}
-            className="w-full bg-gray-50 border border-gray-200 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+            className="w-full bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 px-4 py-3 focus:outline-none focus:border-accent transition-colors text-black dark:text-white placeholder:text-gray-400 dark:placeholder:text-zinc-500"
             placeholder="+43 ..."
             required
           />
@@ -131,7 +131,7 @@ export default function ReservationForm() {
           value={formData.message}
           onChange={handleChange}
           rows={4}
-          className="w-full bg-gray-50 border border-gray-200 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+          className="w-full bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 px-4 py-3 focus:outline-none focus:border-accent transition-colors text-black dark:text-white placeholder:text-gray-400 dark:placeholder:text-zinc-500"
           placeholder="Ihre Nachricht an uns..."
         />
       </div>
